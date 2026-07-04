@@ -3,7 +3,7 @@ naive file chunking
 """
 
 import tiktoken
-from core.config import settings
+from app.core.config import settings
 
 encoding = tiktoken.get_encoding("cl100k_base")
 
