@@ -8,6 +8,7 @@ class Settings(BaseSettings):
     # optional while .env not provided
     github_token: Optional[str] = None
     openai_api_key: Optional[str] = None
+    cohere_api_key: str
     anthropic_api_key: Optional[str] = None
     database_url: str = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///./test.db")
     redis_url: Optional[str] = None
